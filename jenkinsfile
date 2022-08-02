@@ -12,12 +12,10 @@ pipeline{
         }
         stage("test"){
             steps{
-                when{
-                    expresson{
-                        params.executeTests
-                    }
+                  echo 'testing the application...'
+      
                 }
-                echo 'testing the application...'
+              
             }
         }
         stage("deploy"){
